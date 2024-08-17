@@ -1,0 +1,78 @@
+
+/*.btn-portfolio {*/
+/*    display: flex;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.btn-portfolio button {*/
+/*    border: none;*/
+/*    border-radius: 50%;*/
+/*    padding: 10px 20px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.btn-portfolio .filter-active {*/
+/*    background-color: yellow;*/
+/*    color: blue;*/
+/*}*/
+
+/*.btn-portfolio button:not(.filter-active) {*/
+/*    background-color: blue;*/
+/*    color: white;*/
+/*}*/
+
+/*.portfolio-filters {*/
+/*    display: flex;*/
+/*    gap: 10px;*/
+/*    list-style-type: none; !* Removes bullets *!*/
+/*    padding: 0; !* Removes default padding *!*/
+/*}*/
+
+/*.portfolio-filters li {*/
+/*    display: inline-block;*/
+/*    width: 100px;  !* Width of the circle *!*/
+/*    height: 30px; !* Height of the circle *!*/
+/*    line-height: 100px; !* Centers text vertically *!*/
+/*    border-radius: 50%;*/
+/*    text-align: center;*/
+/*    cursor: pointer;*/
+/*    transition: background-color 0.3s ease, color 0.3s ease;*/
+/*    font-size: 14px; !* Adjust font size *!*/
+/*    font-weight: bold; !* Makes text bold *!*/
+/*}*/
+
+/*.portfolio-filters li.filter-active {*/
+/*    background-color: yellow;*/
+/*    color: blue;*/
+/*}*/
+
+/*.portfolio-filters li:not(.filter-active) {*/
+/*    background-color: blue;*/
+/*    color: white;*/
+/*}*/
+
+/*.portfolio-filters li:hover {*/
+/*    opacity: 0.8;*/
+/*}*/
+
+.btn-portfolio{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-portfolio li {
+    border: black;
+    border-radius: 50%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-portfolio .filter-active {
+    background-color: yellow;
+    color: blue;
+}
+
+.btn-portfolio button:not(.filter-active) {
+    background-color: blue;
+    color: white;
+}
