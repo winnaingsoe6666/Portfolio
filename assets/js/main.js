@@ -19,6 +19,7 @@
     headerToggleBtn.classList.toggle('bi-list');
     headerToggleBtn.classList.toggle('bi-x');
   }
+
   headerToggleBtn.addEventListener('click', headerToggle);
 
   /**
@@ -37,7 +38,7 @@
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -65,6 +66,7 @@
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
   }
+
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -87,6 +89,7 @@
       mirror: false
     });
   }
+
   window.addEventListener('load', aosInit);
 
   /**
@@ -118,7 +121,7 @@
     new Waypoint({
       element: item,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach(el => {
           el.style.width = el.getAttribute('aria-valuenow') + '%';
@@ -137,13 +140,13 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -152,8 +155,8 @@
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -171,9 +174,9 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
+          swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
 
       if (swiperElement.classList.contains("swiper-tab")) {
@@ -189,7 +192,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -223,6 +226,35 @@
       }
     })
   }
+
+
+  // document.getElementById('downloadBtn').addEventListener('click', function() {
+  //   const link = document.createElement('a');
+  //   link.href = 'https://github.com/winnaingsoe6666/Portfolio/blob/main/forms/Win_Naing_Soe_Software_Engineer_Resume.pdf';
+  //   link.download = 'Win_Naing_Soe_Software_Engineer_Resume.pdf';
+  //   link.click();
+  // });
+
+  document.getElementById('downloadBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/winnaingsoe6666/Portfolio/main/forms/Win_Naing_Soe_Software_Engineer_Resume.pdf';
+    link.setAttribute('download', 'Win_Naing_Soe_Software_Engineer_Resume.pdf'); // Suggested file name
+    link.setAttribute('target', '_blank'); // Optional: Open in new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+
+  document.getElementById('downloadBtn1').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/winnaingsoe6666/Portfolio/main/forms/Win_Naing_Soe_Software_Engineer_Resume.pdf';
+    link.setAttribute('download', 'Win_Naing_Soe_Software_Engineer_Resume.pdf'); // Suggested file name
+    link.setAttribute('target', '_blank'); // Optional: Open in new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 

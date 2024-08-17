@@ -76,3 +76,77 @@
     background-color: blue;
     color: white;
 }
+
+.p_contact{
+    font-size: x-large;
+    color: #0a53be;
+}
+
+.p_hello{
+    font-size: small;
+    color: #0a53be;
+    font-style: italic;
+}
+
+.follow_me{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.button-group {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    gap: 40px; /* space between the buttons */
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hello {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.line {
+    width: 35%;
+    height: 3px;
+    margin-top: 18px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.btn_home {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-size: 400px;
+}
+
+.btn_home{
+    padding: 20px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    background-color: teal;
+    color: white;
+    border-radius: 10px / 10px;
+    border-width:1px;
+    width: 135px;
+    border-color: black;
+}
+
+.home_filter .btn_home:hover  {
+    color: #0a53be;
+    background-color: yellow;
+    border-color: #0f3d81;
+}

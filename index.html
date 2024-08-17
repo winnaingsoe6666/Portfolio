@@ -28,6 +28,11 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/portfolio.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -53,11 +58,12 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+
       <a href="https://www.facebook.com/profile.php?id=100079095523088" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
       <a href="mailto:winnaingsoe6666@gmail.com" class="google-plus"><i class="bi bi-mailbox"></i></a>
       <a href="https://www.linkedin.com/in/win-naing-soe/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
       <a href="https://line.me/ti/p/tGMYc6ra0E" class="line" target="_blank"><i class="bi bi-line"></i></a>
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -66,24 +72,24 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li>
+<!--        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>-->
+<!--        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--          <ul>-->
+<!--            <li><a href="#">Dropdown 1</a></li>-->
+<!--            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--              <ul>-->
+<!--                <li><a href="#">Deep Dropdown 1</a></li>-->
+<!--                <li><a href="#">Deep Dropdown 2</a></li>-->
+<!--                <li><a href="#">Deep Dropdown 3</a></li>-->
+<!--                <li><a href="#">Deep Dropdown 4</a></li>-->
+<!--                <li><a href="#">Deep Dropdown 5</a></li>-->
+<!--              </ul>-->
+<!--            </li>-->
+<!--            <li><a href="#">Dropdown 2</a></li>-->
+<!--            <li><a href="#">Dropdown 3</a></li>-->
+<!--            <li><a href="#">Dropdown 4</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -98,8 +104,16 @@
       <img src="assets/img/background_portfolio.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container col-lg-10" data-aos="fade-up" data-aos-delay="100">
-        <h2>Win Naing Soe</h2>
-        <p>I'm <span class="typed" data-typed-items="a Full-Stack Developer, a Back-End Developer, a Java Developer, a Software Engineer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class="intro">
+          <span class="hello">HELLO</span>
+          <span class="line"></span>
+        </div>
+        <h2>I am Win Naing Soe</h2>
+        <p><span class="typed" data-typed-items="Java Developer,Back-End Developer,Full-Stack Developer,Software Engineer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <div class=" button-group home_filter">
+          <a class=" btn_home btn  btn_active" href="mailto:winnaingsoe6666@gmai.com">Contact Me</a>
+          <button id="downloadBtn1" class="btn btn_home">Get CV</button>
+        </div>
       </div>
 
     </section><!-- /Hero Section -->
@@ -145,11 +159,11 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>7 Aug 1996</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Myanmar</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Engineering (Electronics)</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Notice period permitting (1 months)</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chiang Mai, Thailand, 50230</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Residence:</strong> <span>Chiang Mai, Thailand, 50230</span></li>
                 </ul>
               </div>
             </div>
@@ -164,119 +178,119 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
+<!--    &lt;!&ndash; Stats Section &ndash;&gt;-->
+<!--    <section id="stats" class="stats section">-->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
 
-        <div class="row gy-4">
+<!--        <div class="row gy-4">-->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item">-->
+<!--              <i class="bi bi-emoji-smile"></i>-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item">-->
+<!--              <i class="bi bi-journal-richtext"></i>-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item">-->
+<!--              <i class="bi bi-headset"></i>-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
+<!--          <div class="col-lg-3 col-md-6">-->
+<!--            <div class="stats-item">-->
+<!--              <i class="bi bi-people"></i>-->
+<!--              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>-->
+<!--              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
 
-        </div>
+<!--        </div>-->
 
-      </div>
+<!--      </div>-->
 
-    </section><!-- /Stats Section -->
+<!--    </section>&lt;!&ndash; /Stats Section &ndash;&gt;-->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+<!--    &lt;!&ndash; Skills Section &ndash;&gt;-->
+<!--    <section id="skills" class="skills section light-background">-->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>Skills</h2>-->
+<!--        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
 
-        <div class="row skills-content skills-animation">
+<!--        <div class="row skills-content skills-animation">-->
 
-          <div class="col-lg-6">
+<!--          <div class="col-lg-6">-->
 
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-          </div>
+<!--          </div>-->
 
-          <div class="col-lg-6">
+<!--          <div class="col-lg-6">-->
 
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+<!--            <div class="progress">-->
+<!--              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>-->
+<!--              <div class="progress-bar-wrap">-->
+<!--                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End Skills Item &ndash;&gt;-->
 
-          </div>
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
 
-      </div>
+<!--      </div>-->
 
-    </section><!-- /Skills Section -->
+<!--    </section>&lt;!&ndash; /Skills Section &ndash;&gt;-->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -290,6 +304,10 @@
           to analyze complex projects and make clean requirements for other team members.
         </p>
       </div><!-- End Section Title -->
+
+      <div class="container ">
+        <button id="downloadBtn" class="btn btn-primary btn_download">Download PDF</button>
+      </div>
 
       <div class="container">
 
@@ -328,7 +346,7 @@
               <h5>2023</h5>
               <p><em>Information Technology Professionals Examination Council</em></p>
               <p>Fundamental Information Technology Engineers Examination (FE) certificate </p>
-              <p>Credential : <a href="https://itpec.org/statsandresults/all-passers-information/Myanmar/2022A_FE.pdf">https://itpec.org</a> </p>
+              <p>Credential : <a href="https://itpec.org/statsandresults/all-passers-information/Myanmar/2022A_FE.pdf" target="_blank">https://itpec.org</a> </p>
               <p>Credential ID : MMFE23S00159</p>
             </div><!-- Edn Resume Item -->
 
@@ -339,7 +357,7 @@
             <div class="resume-item">
               <h4>Senior Software Engineer</h4>
               <h5>04/2023 – present</h5>
-              <p><em>DIR-ACE Technology, Offshore development Team, Myanmar</em></p>
+              <p><a href="https://www.diracetechnology.com/" target="_blank"> <em>DIR-ACE Technology, Offshore development Team, Myanmar</em></a></p>
               <ul>
                 <li>Collaborated with clients on design outlines, creating detailed documentation after incorporating their feedback.</li>
                 <li>Developed and maintained secure, scalable web applications (Java, Spring Boot), desktop applications (Java Swing), automation tools (shell scripts), and stored procedures.</li>
@@ -369,7 +387,7 @@
             <div class="resume-item">
               <h4>Software Engineer</h4>
               <h5>4/2022 – 3/2023</h5>
-              <p><em>DIR-ACE Technology, Offshore development Team, Myanmar</em></p>
+              <p><a href="https://www.diracetechnology.com/" target="_blank"> <em>DIR-ACE Technology, Offshore development Team, Myanmar</em></a></p>
               <ul>
                 <li>Contributed to REST API development using Java for improved system capabilities.</li>
                 <li>Refactored complex stored procedures for SIMM calculations, enhancing code readability and optimizing performance for faster initial margin (IM) calculations.</li>
@@ -383,7 +401,8 @@
             <div class="resume-item">
               <h4>Full Stack Developer</h4>
               <h5>11/2020 – 05/2023</h5>
-              <p><em>DIR-ACE Technology, Myanmar Association of Japan Alumni (MAJA)</em></p>
+              <p><a href="https://www.diracetechnology.com/" target="_blank"> <em>DIR-ACE Technology, </em></a>
+                 <a href="https://www.ascoja-maja.org.mm/" target="_blank" style="color: #6f42c1"><em>Myanmar Association of Japan Alumni (MAJA)</em></a></p>
               <p>JLPT Registration System Project</p>
               <ul>
                 <li>Developed a multi-tiered web application for online submission of Japanese Language Proficiency Test (JLPT) forms.</li>
@@ -405,7 +424,7 @@
             <div class="resume-item">
               <h4>Junior Programmer</h4>
               <h5>03/2020 – 04/2022</h5>
-              <p><em>DIR-ACE Technology, Offshore development Team, Myanmar</em></p>
+              <p><a href="https://www.diracetechnology.com/" target="_blank"> <em>DIR-ACE Technology, Offshore development Team, Myanmar</em></a></p>
               <ul>
                 <li>Streamlined daily trade processing by developing a new function and user interface for pre-trade calculations.</li>
                 <li>Developed automation programs using Shell Script and VBA tools to streamline workflows.</li>
@@ -420,7 +439,7 @@
             <div class="resume-item">
               <h4>Junior Programmer (Internship)</h4>
               <h5>12/2019 – 03/2020</h5>
-              <p><em>DIR-ACE Technology, OJT, Myanmar</em></p>
+              <p><a href="https://www.diracetechnology.com/" target="_blank"> <em>DIR-ACE Technology, OJT, Myanmar</em></a></p>
               <ul>
                 <li>Developed Attendance Management System </li>
                 <li>Collaborated with senior developers to design and implement a comprehensive attendance management system.</li>
@@ -458,8 +477,8 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active btn btn-portfolio">All</li>
-            <li data-filter=".filter-app" class="btn btn-portfolio">App</li>
+            <li data-filter="*" class="btn btn-portfolio filter-active">All</li>
+            <li data-filter=".filter-app" class="btn btn-portfolio">Development</li>
             <li data-filter=".filter-product" class="btn btn-portfolio">Product</li>
             <li data-filter=".filter-branding" class="btn btn-portfolio">Recognition</li>
             <li data-filter=".filter-books" class="btn btn-portfolio">Books</li>
@@ -662,184 +681,184 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+<!--    <section id="services" class="services section">-->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>Services</h2>-->
+<!--        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
 
-      <div class="container">
+<!--      <div class="container">-->
 
-        <div class="row gy-4">
+<!--        <div class="row gy-4">-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>-->
+<!--              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; End Service Item &ndash;&gt;-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-          </div><!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>-->
+<!--              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Service Item &ndash;&gt;-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div><!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>-->
+<!--              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Service Item &ndash;&gt;-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div><!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>-->
+<!--              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Service Item &ndash;&gt;-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div><!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>-->
+<!--              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Service Item &ndash;&gt;-->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div><!-- End Service Item -->
+<!--          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">-->
+<!--            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>-->
+<!--            <div>-->
+<!--              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>-->
+<!--              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; End Service Item &ndash;&gt;-->
 
-        </div>
+<!--        </div>-->
 
-      </div>
+<!--      </div>-->
 
-    </section><!-- /Services Section -->
+<!--    </section>&lt;!&ndash; /Services Section &ndash;&gt;-->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
+<!--    <section id="testimonials" class="testimonials section light-background">-->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+<!--      &lt;!&ndash; Section Title &ndash;&gt;-->
+<!--      <div class="container section-title" data-aos="fade-up">-->
+<!--        <h2>Testimonials</h2>-->
+<!--        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+<!--      </div>&lt;!&ndash; End Section Title &ndash;&gt;-->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+<!--      <div class="container" data-aos="fade-up" data-aos-delay="100">-->
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
+<!--        <div class="swiper init-swiper">-->
+<!--          <script type="application/json" class="swiper-config">-->
+<!--            {-->
+<!--              "loop": true,-->
+<!--              "speed": 600,-->
+<!--              "autoplay": {-->
+<!--                "delay": 5000-->
+<!--              },-->
+<!--              "slidesPerView": "auto",-->
+<!--              "pagination": {-->
+<!--                "el": ".swiper-pagination",-->
+<!--                "type": "bullets",-->
+<!--                "clickable": true-->
+<!--              },-->
+<!--              "breakpoints": {-->
+<!--                "320": {-->
+<!--                  "slidesPerView": 1,-->
+<!--                  "spaceBetween": 40-->
+<!--                },-->
+<!--                "1200": {-->
+<!--                  "slidesPerView": 3,-->
+<!--                  "spaceBetween": 1-->
+<!--                }-->
+<!--              }-->
+<!--            }-->
+<!--          </script>-->
+<!--          <div class="swiper-wrapper">-->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>Saul Goodman</h3>-->
+<!--                <h4>Ceo &amp; Founder</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>Sara Wilsson</h3>-->
+<!--                <h4>Designer</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>Jena Karlis</h3>-->
+<!--                <h4>Store Owner</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>Matt Brandon</h3>-->
+<!--                <h4>Freelancer</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
+<!--            <div class="swiper-slide">-->
+<!--              <div class="testimonial-item">-->
+<!--                <p>-->
+<!--                  <i class="bi bi-quote quote-icon-left"></i>-->
+<!--                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>-->
+<!--                  <i class="bi bi-quote quote-icon-right"></i>-->
+<!--                </p>-->
+<!--                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">-->
+<!--                <h3>John Larson</h3>-->
+<!--                <h4>Entrepreneur</h4>-->
+<!--              </div>-->
+<!--            </div>&lt;!&ndash; End testimonial item &ndash;&gt;-->
 
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+<!--          </div>-->
+<!--          <div class="swiper-pagination"></div>-->
+<!--        </div>-->
 
-      </div>
+<!--      </div>-->
 
-    </section><!-- /Testimonials Section -->
+<!--    </section>&lt;!&ndash; /Testimonials Section &ndash;&gt;-->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -847,7 +866,13 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p class="p_contact">Get in Touch</p>
+        <p class="p_hello">"I'm always excited to collaborate on innovative projects and explore new opportunities.
+          Whether you have a question, a project idea, or just want to say hello,
+          I'd love to hear from you! My inbox is always open, and I strive to respond promptly.
+          Let's connect and create something extraordinary together.
+          Don't hesitate to reach out—let's start a conversation and see where it leads."
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -860,28 +885,59 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h3>Current Address</h3>
+                  <p>Chiang Mai, Thailand 50230</p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <h3>Call Me</h3>
+                  <p>+66 960 30 8914</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-whatsapp flex-shrink-0"></i>
+                <div>
+                  <h3>Message Me On Whatsapp</h3>
+                  <p><span>+66960308914</span></p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-line flex-shrink-0"></i>
+                <div>
+                  <h3>Message Me On Line</h3>
+                  <p><a href="https://line.me/ti/p/tGMYc6ra0E" class="line" target="_blank">winnaingsoe.mm</a></p>
                 </div>
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <h3>Email Me</h3>
+                  <p><a href="mailto:winnaingsoe6666@gmail.com">winnaingsoe6666@gmail.com</a></p>
                 </div>
               </div><!-- End Info Item -->
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"  style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div >
+                <div>
+                  <h3>Follow Me : </h3>
+                  <ul class="d-flex follow_me" data-aos="fade-up" data-aos-delay="400">
+                    <li class="info-item " data-aos="fade-up" data-aos-delay="400">
+                      <a href="https://www.linkedin.com/in/win-naing-soe/" target="_blank"><i class="bi bi-linkedin flex-shrink-0"></i></a>
+                    </li>
+                    <li class="info-item " data-aos="fade-up" data-aos-delay="400">
+                      <a href="https://www.facebook.com/profile.php?id=100079095523088" target="_blank"><i class="bi bi-facebook flex-shrink-0"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div><!-- End Info Item -->
+
+<!--              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"  style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--            -->
             </div>
           </div>
 
