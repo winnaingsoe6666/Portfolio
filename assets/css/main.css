@@ -794,10 +794,9 @@ section,
   padding: 10px;
   font-size: 14px;
   font-weight: 600;
-  margin: 10px 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 10px;
   transition: all 0.3s ease-in-out;
   background-color: #0a53be;
   color: white;
@@ -820,12 +819,12 @@ section,
   margin-right: 0;
 }
 
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
+/*@media (max-width: 575px) {*/
+/*  .portfolio .portfolio-filters li {*/
+/*    font-size: 14px;*/
+/*    margin: 0 5px;*/
+/*  }*/
+/*}*/
 
 .portfolio .portfolio-content {
   position: relative;
